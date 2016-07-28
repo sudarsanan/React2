@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76B79AB8-F9F8-41B0-BEA4-BC8FC24A6E66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mminformatics</RootNamespace>
+    <AssemblyName>mminformatics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\mminformatics\New.aspx.cs">
+      <DependentUpon>New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\mminformatics\New.aspx.designer.cs">
+      <DependentUpon>New.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83a5a58e-bc2d-40e4-bfe5-d2e141739ab9}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{49a14777-6b0e-4dfa-b939-71805ffe9404}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Layouts\mminformatics\object-assign\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Layouts\mminformatics\New.aspx" />
+    <Content Include="Layouts\mminformatics\Scripts\object-assign.js" />
+    <Content Include="Layouts\mminformatics\Scripts\App.js" />
+    <Content Include="Layouts\mminformatics\Scripts\bootstrap-multiselect.js" />
+    <Content Include="Layouts\mminformatics\Scripts\bootstrap.js" />
+    <Content Include="Layouts\mminformatics\Scripts\bootstrap.min.css" />
+    <Content Include="Layouts\mminformatics\Scripts\bootstrap.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\config.js" />
+    <Content Include="Layouts\mminformatics\Scripts\daterangepicker.css" />
+    <Content Include="Layouts\mminformatics\Scripts\daterangepicker.js" />
+    <Content Include="Layouts\mminformatics\Scripts\get-options.js" />
+    <Content Include="Layouts\mminformatics\Scripts\GetChoiceOptions.js" />
+    <Content Include="Layouts\mminformatics\Scripts\GetListDetails.js" />
+    <Content Include="Layouts\mminformatics\Scripts\index.js" />
+    <Content Include="Layouts\mminformatics\Scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="Layouts\mminformatics\Scripts\jquery-2.2.4.js" />
+    <Content Include="Layouts\mminformatics\Scripts\jquery-2.2.4.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\loadSPJS.js" />
+    <Content Include="Layouts\mminformatics\Scripts\Main.js" />
+    <Content Include="Layouts\mminformatics\Scripts\MMRequest.js" />
+    <Content Include="Layouts\mminformatics\Scripts\moment.js" />
+    <Content Include="Layouts\mminformatics\Scripts\moment.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\NewReact.js" />
+    <Content Include="Layouts\mminformatics\Scripts\r.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react-dom-server.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react-dom-server.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react-dom.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react-with-addons.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react-with-addons.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react.js" />
+    <Content Include="Layouts\mminformatics\Scripts\react.min.js" />
+    <Content Include="Layouts\mminformatics\Scripts\RequestDetails.js" />
+    <Content Include="Layouts\mminformatics\Scripts\require.js" />
+    <Content Include="Layouts\mminformatics\Scripts\Utility.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\App.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\bootstrap.datepicker\index.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\config.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\GetChoiceOptions.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\GetListDetails.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\index.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\loadSPJS.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\Main.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\MMRequest.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\NewReact.tsx" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\RequestDetails.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\daterangepicker\daterangepicker-tests.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\daterangepicker\daterangepicker.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\index.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\moment\moment-external-tests.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\moment\moment-node.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\moment\moment-tests.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\moment\moment.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\react\react-dom.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\react\react.d - Copy.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\react\react.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\typings\sharepoint\SharePoint.d.ts" />
+    <TypeScriptCompile Include="Layouts\mminformatics\Scripts\Utility.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
